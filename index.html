@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Password Generator</title>
+
+    <!-- Link to CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -12,33 +15,34 @@
         <div class="result-container">
             <span class="result"></span>
             <button class="btn" id="clipboard">
-                <i class="far fa-clipboard"></i>
+                <i class="fa-clipboard"></i>
             </button>
         </div>
+        <br>
 
         <div class="settings">
             <div class="settings">
-                <label>Password Length</label>
+                <label for="length">Password Length</label>
                 <input type="number" id="length" min="4" max="128" value="10" />
             </div>
 
             <div class="settings">
-                <label>Include Uppercase Letters</label>
+                <label for="uppercase">Include Uppercase Letters</label>
                 <input type="checkbox" id="uppercase" checked />
             </div>
 
             <div class="settings">
-                <label>Include Lowercase Letters</label>
+                <label for="lowercase">Include Lowercase Letters</label>
                 <input type="checkbox" id="lowercase" checked />
             </div>
 
             <div class="settings">
-                <label>Include Numbers</label>
+                <label for="numbers">Include Numbers</label>
                 <input type="checkbox" id="numbers" checked />
             </div>
 
             <div class="settings">
-                <label>Include Symbols</label>
+                <label for="symbols">Include Symbols</label>
                 <input type="checkbox" id="symbols" checked />
             </div>
 
@@ -47,17 +51,7 @@
 
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
+        <br>
 
         <button id="generate" class="btn btn-large">
             Generate Password
